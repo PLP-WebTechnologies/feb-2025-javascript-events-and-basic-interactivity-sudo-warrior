@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.gallery img {
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.tab-content {
+  margin-top: 10px;
+}
+
+#emailFeedback, #passwordFeedback {
+  font-size: 0.9em;
+  color: red;
+}
+
+.valid {
+  color: green;
+}
