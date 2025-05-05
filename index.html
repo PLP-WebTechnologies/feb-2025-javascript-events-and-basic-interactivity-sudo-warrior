@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>JS Event Assignment</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Interactive JS Assignment</h1>
-  
-  <!-- Button element for click event -->
-  <button id="actionButton">Click Me!</button>
-  
-  <!-- Form element for form validation -->
-  <form id="myForm">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <br>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" minlength="8" required>
-    <br>
+
+  <h1>🎉 JS Event Playground 🎉</h1>
+
+  <!-- Button with multiple events -->
+  <button id="magicButton">Click me!</button>
+
+  <!-- Image gallery -->
+  <div class="gallery">
+    <img id="galleryImage" src="https://via.placeholder.com/300" alt="Gallery Image" />
+    <br/>
+    <button id="prev">Prev</button>
+    <button id="next">Next</button>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab" data-target="content1">Tab 1</button>
+    <button class="tab" data-target="content2">Tab 2</button>
+    <div id="content1" class="tab-content">Content for Tab 1</div>
+    <div id="content2" class="tab-content hidden">Content for Tab 2</div>
+  </div>
+
+  <!-- Form with validation -->
+  <form id="signupForm">
+    <label>Email: <input type="email" id="email" required /></label>
+    <span id="emailFeedback"></span><br/>
+    <label>Password: <input type="password" id="password" required /></label>
+    <span id="passwordFeedback"></span><br/>
     <button type="submit">Submit</button>
   </form>
 
